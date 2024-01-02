@@ -5,23 +5,22 @@ public class NATOreplace {
 
         switch (myChar) {
             case 'A':
-                System.out.println(myChar +  " = Able");
+                System.out.println(myChar + " = Able");
                 break;
             case 'B':
-                System.out.println(myChar +  " = Baker");
+                System.out.println(myChar + " = Baker");
                 break;
             case 'C':
-                System.out.println(myChar +  " = Charlie");
+                System.out.println(myChar + " = Charlie");
                 break;
             case 'D':
-                System.out.println(myChar +  " = Dog");
+                System.out.println(myChar + " = Dog");
                 break;
             case 'E':
-                System.out.println(myChar +  " = Easy");
+                System.out.println(myChar + " = Easy");
                 break;
             default:
                 System.out.println("Not found");
-
         }
     }
 }
