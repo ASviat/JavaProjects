@@ -11,9 +11,9 @@ public class Customer {
         Customer customer2 = new Customer("Noonga", 655, "noongas@email.com");
         Customer customer3 = new Customer("Sasas", "sasas@email.com");
 
-        System.out.println(customer.name + " " + customer.credit + " " + customer.emailAddress);
-        System.out.println(customer2.name + " " + customer2.credit + " " + customer2.emailAddress);
-        System.out.println(customer3.name + " " + customer3.credit + " " + customer3.emailAddress);
+        System.out.println(customer.getName() + " " + customer.getCredit() + " " + customer.getEmailAddress());
+        System.out.println(customer2.getName() + " " + customer2.getCredit() + " " + customer2.getEmailAddress());
+        System.out.println(customer3.getName() + " " + customer3.getCredit() + " " + customer3.getEmailAddress());
 
     }
 
