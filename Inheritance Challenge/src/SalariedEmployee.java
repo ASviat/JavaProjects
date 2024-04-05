@@ -5,10 +5,10 @@ public class SalariedEmployee extends Employee {
     private boolean isRetired;
 
     public SalariedEmployee(String name, String dateOfBirth, String endDate, long employeeId, String hireDate,
-                            double annualSalary, boolean isRetired) {
+                            double annualSalary) {
         super(name, dateOfBirth, endDate, employeeId, hireDate);
         this.annualSalary = annualSalary;
-        this.isRetired = isRetired;
+
     }
 
     @Override
@@ -21,8 +21,12 @@ public class SalariedEmployee extends Employee {
     }
 
     public void retire() {
+        terminate(LocalDate.now().toString());
         this.isRetired = true;
-        String currentDate = LocalDate.now().toString();
-        this.setEndDate(currentDate);
+    }
+
+    @Override
+    public double collectPay() {
+        return this.annualSalary / 26;
     }
 }

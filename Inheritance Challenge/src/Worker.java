@@ -7,7 +7,7 @@ public class Worker {
     private String dateOfBirth;
     private String endDate;
 
-    public static int counter=1;
+    public static int counter = 1;
 
     public Worker() {
 
@@ -42,6 +42,10 @@ public class Worker {
             System.out.println("Wrong data format. Enter dd.MM.yyyy");
             return 66;
         }
+    }
+
+    public String getName() {
+        return name;
     }
 
     public double collectPay() {

@@ -13,9 +13,10 @@ public class Main {
         hourlyEmployee.getDoublePay();
         System.out.println(hourlyEmployee);
         SalariedEmployee salariedEmployee = new SalariedEmployee("Sasha", "14.01.1976",
-                "Still working", Worker.counter++, "22.09.1992", 50000.50, false);
+                "Still working", Worker.counter++, "22.09.1992", 50000.50);
         System.out.println(salariedEmployee);
         salariedEmployee.retire();
         System.out.println(salariedEmployee);
+        System.out.println("Collected pay by " + salariedEmployee.getName() + ": " + salariedEmployee.collectPay());
     }
 }
