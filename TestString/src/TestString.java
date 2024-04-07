@@ -55,5 +55,9 @@ public class TestString {
         System.out.println("    Text\n".repeat(2).indent(-2));
         System.out.println("-".repeat(20));
 
+        String x = """
+                Text Block in action, babe!
+                """;
+        System.out.println(x);
     }
 }
