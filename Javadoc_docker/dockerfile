@@ -1,0 +1,5 @@
+FROM bellsoft/liberica-openjdk-alpine
+COPY ./java/src ./src
+RUN mkdir ./out
+RUN javac -sourcepath ./src -d out src/ru/gb/jcore/sample/Main.java
+CMD javadoc -d docs -sourcepath ./src -cp out/ru/gb/jcore/sample/Main -subpackages ru
