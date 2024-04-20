@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47c43162-4566-4445-9e5e-c2390a2295c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Diagnosis/.conf/Dockerfile.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Diagnosis/.conf/Run MySQL Db.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Diagnosis/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Diagnosis/src/Program/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Diagnosis/src/Registry/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sample/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MethodChallenge" beforeDir="false" afterPath="$PROJECT_DIR$/MethodChallenge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MethodChallenge/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/MethodChallenge/src/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animal_nursery" beforeDir="false" afterPath="$PROJECT_DIR$/animal_nursery" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2aDbz7R0qOwrCukKyRUdLjbMDeY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/JavaProjects/Diagnosis",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47c43162-4566-4445-9e5e-c2390a2295c7" name="Changes" comment="" />
+      <created>1703856355784</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703856355784</updated>
+    </task>
+    <servers />
+  </component>
+</project>
