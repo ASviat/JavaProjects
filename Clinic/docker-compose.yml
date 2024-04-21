@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  registry-app:
+    image: program
+    container_name: program.app
+    build:
+      context: .
+      dockerfile: Dockerfile-clinic
+    depends_on:
+      - registry-db
+
+
+
+  registry-db:
+    image: mysql:latest
+    container_name: clinic.db
+    environment:
+      - MYSQL_ROOT_PASSWORD=Password
+      - MYSQL_DATABASE=clinicsregistry
+    ports:
+      - 5001:3306

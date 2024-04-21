@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class DbConnection {
 
-    private String url = "jdbc:mysql://localhost:5001/clinicsregistry";
+    private String url = "jdbc:mysql://registry-db:5001/clinicsregistry";
     private String user = "root";
     private String password = "Password";
 
@@ -18,6 +18,8 @@ public class DbConnection {
 
     public void getConnection(Patient patient) {
         try {
+
+
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("Вход в СУБД выполнен.");
 //            useDatabase(connection);

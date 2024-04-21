@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Dockerfile-clinic" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="attachToContainerNeeded" value="true" />
+        <option name="containerName" value="Dockerfile-clinic-program" />
+        <option name="commandLineOptions" value="-i" />
+        <option name="sourceFilePath" value="Dockerfile-clinic" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>
