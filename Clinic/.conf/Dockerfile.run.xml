@@ -5,7 +5,7 @@
         <option name="imageTag" value="image_program_run" />
         <option name="attachToContainerNeeded" value="true" />
         <option name="containerName" value="Run_Program" />
-        <option name="commandLineOptions" value="" />
+        <option name="commandLineOptions" value="-i" />
         <option name="sourceFilePath" value="Dockerfile" />
       </settings>
     </deployment>
