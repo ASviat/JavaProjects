@@ -82,7 +82,7 @@ public class Program {
         int x;
         int y;
         do {
-            System.out.println("Введите координаты хода X и Y\n(от 1 до 3) через пробел: ");
+            System.out.printf("Введите координаты хода X и Y\n(от 1 до %s) через пробел: \n", Math.max(fieldSizeX, fieldSizeY));
             x = scanner.nextInt() - 1;
             y = scanner.nextInt() - 1;
         }
@@ -118,17 +118,57 @@ public class Program {
      * Ход игрока (компьютера)
      */
     static void aiTurn() {
-        int x ;
-        int y ;
-        do {
 
-            x = random.nextInt(fieldSizeX);
-            y = random.nextInt(fieldSizeY);
-
+        int x = 0;
+        int y = 0;
+        if (playerWinNextTurn()) {
+            aiIntellect();
+        } else {
+            do {
+                x = random.nextInt(fieldSizeX);
+                y = random.nextInt(fieldSizeY);
+            } while (!isCellEmpty(x, y));
+            field[x][y] = DOT_AI;
         }
-        while (!isCellEmpty(x, y));
-        field[x][y] = DOT_AI;
+
+
     }
+
+    static boolean playerWinNextTurn() {
+
+        for (int i = 0; i < fieldSizeX; i++) {
+            for (int j = 0; j < fieldSizeY; j++) {
+                if (isCellEmpty(i, j)) {
+                    field[i][j] = DOT_HUMAN;
+                    if (checkWin(DOT_HUMAN)) {
+                        field[i][j] = DOT_EMPTY;
+                        return true;
+                    } else {
+                        field[i][j] = DOT_EMPTY;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    static void aiIntellect() {
+        outerLoop:
+        for (int i = 0; i < fieldSizeX; i++) {
+            for (int j = 0; j < fieldSizeY; j++) {
+                if (isCellEmpty(i, j)) {
+                    field[i][j] = DOT_HUMAN;
+                    if (checkWin(DOT_HUMAN)) {
+                        field[i][j] = DOT_AI;
+                        break outerLoop;
+                    } else {
+                        field[i][j] = DOT_EMPTY;
+                    }
+                }
+            }
+        }
+    }
+
 
     /**
      * Проверка на ничью
@@ -158,13 +198,12 @@ public class Program {
         for (int i = 0; i < fieldSizeX; i++) {
             for (int j = 0; j < fieldSizeY; j++) {
 
-                if (field[i][j] == DOT_HUMAN) {
+                if (field[i][j] == dot) {
                     counter++;
                 } else {
                     counter = 0;
                 }
-
-                if (counter == 3) {
+                if (counter == WIN_COUNT) {
                     return true;
                 }
             }
@@ -175,13 +214,13 @@ public class Program {
         for (int i = 0; i < fieldSizeX; i++) {
             for (int j = 0; j < fieldSizeY; j++) {
 
-                if (field[j][i] == DOT_HUMAN) {
+                if (field[j][i] == dot) {
                     counter++;
                 } else {
                     counter = 0;
                 }
 
-                if (counter == 3) {
+                if (counter == WIN_COUNT) {
                     return true;
                 }
             }
