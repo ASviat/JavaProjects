@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c43162-4566-4445-9e5e-c2390a2295c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MethodChallenge" beforeDir="false" afterPath="$PROJECT_DIR$/MethodChallenge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MethodChallenge/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/MethodChallenge/src/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animal_nursery" beforeDir="false" afterPath="$PROJECT_DIR$/animal_nursery" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +36,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DBeaver",
+    "last_opened_file_path": "D:/JavaProjects",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -54,8 +54,6 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/Javadoc_docker" />
-      <path value="$PROJECT_DIR$/MethodChallenge" />
-      <path value="$PROJECT_DIR$/animal_nursery" />
     </ignored-roots>
   </component>
 </project>
