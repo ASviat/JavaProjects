@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c43162-4566-4445-9e5e-c2390a2295c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Diagnosis/.conf/Dockerfile.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Diagnosis/.conf/Run MySQL Db.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Diagnosis/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Diagnosis/src/Program/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Diagnosis/src/Registry/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MethodChallenge" beforeDir="false" afterPath="$PROJECT_DIR$/MethodChallenge" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MethodChallenge/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/MethodChallenge/src/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animal_nursery" beforeDir="false" afterPath="$PROJECT_DIR$/animal_nursery" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +22,7 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2aDbz7R0qOwrCukKyRUdLjbMDeY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,8 +36,8 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProjects/Diagnosis",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "D:/DBeaver",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,5 +50,12 @@
       <updated>1703856355784</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Javadoc_docker" />
+      <path value="$PROJECT_DIR$/MethodChallenge" />
+      <path value="$PROJECT_DIR$/animal_nursery" />
+    </ignored-roots>
   </component>
 </project>
