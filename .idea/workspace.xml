@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c43162-4566-4445-9e5e-c2390a2295c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Diagnosis/.conf/Dockerfile.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Diagnosis/.conf/Run MySQL Db.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Diagnosis/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Diagnosis/src/Program/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Diagnosis/src/Registry/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sample/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MethodChallenge" beforeDir="false" afterPath="$PROJECT_DIR$/MethodChallenge" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MethodChallenge/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/MethodChallenge/src/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animal_nursery" beforeDir="false" afterPath="$PROJECT_DIR$/animal_nursery" afterDir="false" />
@@ -37,10 +31,10 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "ASviat",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProjects/Diagnosis",
+    "last_opened_file_path": "D:/JavaProjects",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
