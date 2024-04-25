@@ -13,10 +13,6 @@ public class Program {
     private static int fieldSizeX;
     private static int fieldSizeY;
     private static char[][] field;
-    private static boolean flagForAI;
-    private static int xFieldForAI;
-    private static int yFieldForAI;
-    private static char direction;
 
 
     public static void main(String[] args) {
@@ -122,61 +118,13 @@ public class Program {
      * Ход игрока (компьютера)
      */
     static void aiTurn() {
-        int x = 0;
-        int y = 0;
+        int x ;
+        int y ;
         do {
-            if (flagForAI) {
-                switch (direction) {
-                    case 'v' -> {
-                        if (xFieldForAI + 1 < fieldSizeX && field[xFieldForAI + 1][yFieldForAI] == DOT_EMPTY) {
-                            field[xFieldForAI + 1][yFieldForAI] = DOT_AI;
-                            return;
-                        }
-                        if (xFieldForAI - 2 >= 0 && field[xFieldForAI - 2][yFieldForAI] == DOT_EMPTY
-                                && field[xFieldForAI + 1][yFieldForAI] == DOT_AI) {
-                            field[xFieldForAI - 2][yFieldForAI] = DOT_AI;
-                            return;
-                        }
-                        direction = ' ';
-                        flagForAI = false;
-                    }
-                    case 'h' -> {
-                        if (yFieldForAI + 1 < fieldSizeY && field[xFieldForAI][yFieldForAI + 1] == DOT_EMPTY) {
-                            field[xFieldForAI][yFieldForAI + 1] = DOT_AI;
-                            return;
-                        }
-                        if (yFieldForAI - 2 >= 0 && field[xFieldForAI][yFieldForAI - 2] == DOT_EMPTY
-                                && field[xFieldForAI][yFieldForAI + 1] == DOT_AI) {
-                            field[xFieldForAI][yFieldForAI - 2] = DOT_AI;
-                            return;
-                        }
-                        direction = ' ';
-                        flagForAI = false;
-                    }
-                    case 'q' -> {
-                        if (yFieldForAI + 1 < Math.min(fieldSizeX, fieldSizeY)
-                                && xFieldForAI - 1 >= 0
-                                && field[xFieldForAI - 1][yFieldForAI + 1] == DOT_EMPTY) {
-                            field[xFieldForAI - 1][yFieldForAI + 1] = DOT_AI;
-                            return;
-                        }
-                        if (xFieldForAI + 2 < fieldSizeX
-                                && yFieldForAI - 2 >= 0
-                                && field[xFieldForAI + 2][yFieldForAI - 2] == DOT_EMPTY
-                                && yFieldForAI + 1 < Math.min(fieldSizeX, fieldSizeY)) {
-                            field[xFieldForAI + 2][yFieldForAI - 2] = DOT_AI;
-                            return;
-                        }
-                        direction = ' ';
-                        flagForAI = false;
-                    }
 
-                }
+            x = random.nextInt(fieldSizeX);
+            y = random.nextInt(fieldSizeY);
 
-            } else {
-                x = random.nextInt(fieldSizeX);
-                y = random.nextInt(fieldSizeY);
-            }
         }
         while (!isCellEmpty(x, y));
         field[x][y] = DOT_AI;
@@ -215,12 +163,7 @@ public class Program {
                 } else {
                     counter = 0;
                 }
-                if (counter == WIN_COUNT - 1) {
-                    flagForAI = true;
-                    xFieldForAI = i;
-                    yFieldForAI = j;
-                    direction = 'h';
-                }
+
                 if (counter == 3) {
                     return true;
                 }
@@ -237,12 +180,7 @@ public class Program {
                 } else {
                     counter = 0;
                 }
-                if (counter == WIN_COUNT - 1) {
-                    flagForAI = true;
-                    xFieldForAI = j;
-                    yFieldForAI = i;
-                    direction = 'v';
-                }
+
                 if (counter == 3) {
                     return true;
                 }
@@ -250,21 +188,6 @@ public class Program {
             counter = 0;
         }
 
-        // Проверка победы по горизонталям и вертикалям
-//        for (int x = 0; x < fieldSizeX; x++) {
-//            for (int y = 0; y < Math.min(fieldSizeX, fieldSizeY); y++) {
-//                if (field[x][y] == dot || field[y][x] == dot) {
-//                    counter++;
-//                    if (counter == WIN_COUNT) {
-//                        return true;
-//                    }
-//                } else {
-//                    counter = 0;
-//                }
-//            }
-//            counter = 0;
-//
-//        }
 
         int countCircles = 0;
         //проверка диагоналей, разбитых на четверти
@@ -274,12 +197,6 @@ public class Program {
                     counter++;
                 } else {
                     counter = 0;
-                }
-                if (counter == 2) {
-                    flagForAI = true;
-                    xFieldForAI = f;
-                    yFieldForAI = l;
-                    direction = 'q';
                 }
                 if (counter == WIN_COUNT) {
                     return true;
@@ -296,12 +213,6 @@ public class Program {
                 } else {
                     counter = 0;
                 }
-                if (counter == 2) {
-                    flagForAI = true;
-                    xFieldForAI = f;
-                    yFieldForAI = l;
-                    direction = 'q';
-                }
                 if (counter == WIN_COUNT) {
                     return true;
                 }
@@ -316,12 +227,6 @@ public class Program {
                 } else {
                     counter = 0;
                 }
-                if (counter == 2) {
-                    flagForAI = true;
-                    xFieldForAI = l;
-                    yFieldForAI = i;
-                    direction = 'e';
-                }
                 if (counter == WIN_COUNT) {
                     return true;
                 }
@@ -335,12 +240,6 @@ public class Program {
                     counter++;
                 } else {
                     counter = 0;
-                }
-                if (counter == 2) {
-                    flagForAI = true;
-                    xFieldForAI = j;
-                    yFieldForAI = k;
-                    direction = 'r';
                 }
                 if (counter == WIN_COUNT) {
                     return true;
