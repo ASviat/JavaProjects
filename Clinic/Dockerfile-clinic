@@ -2,4 +2,3 @@ FROM bellsoft/liberica-openjdk-alpine
 WORKDIR /usr/src/app
 COPY out/artifacts/Clinic_jar/Clinic.jar .
 CMD ["java", "-jar", "Clinic.jar"]
-
